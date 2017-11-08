@@ -1,0 +1,15 @@
+<article>
+  <header>
+    <h2>
+      <%= @article.title %>
+    </h2>
+  </header>
+  <section>
+    <p>
+      <%= @article.content %>
+    </p>
+  </section>
+</article>
+
+<%= link_to 'Edit this post', edit_article_path(@article) %>
+<%= link_to 'Return to main page', root_path %>
